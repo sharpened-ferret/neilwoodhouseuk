@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en">
+
+<head>
+    {% block head %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>{% block title %}{% endblock title %} - Neil Woodhouse</title>
+    <link rel="stylesheet" href="static/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+    <link rel="stylesheet" href="static/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="static/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="static/css/Contact-Form-Clean.css">
+    <link rel="stylesheet" href="static/css/less-muted-text.css">
+    <link rel="stylesheet" href="static/css/Projects-Horizontal.css">
+    <link rel="icon" type="image/x-icon" href="static/img/favicon.ico">
+    {% endblock head %}
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-lg bg-dark portfolio-navbar fixed-navbar-mobile">
+        <div class="container"><a class="navbar-brand logo" href="/">Neil Woodhouse</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navbarNav"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav navbar-nav ml-auto">
+                    {% block navlinks %}
+                    <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/cv">CV</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contact-me">Contact Me</a></li>
+                    {% endblock navlinks %}
+                </ul>
+        </div>
+        </div>
+    </nav>
+    {% block pagecontent %}
+    {% endblock pagecontent %}
+    
+    <footer class="page-footer">
+        <div class="container">
+            <div class="social-icons">
+                <a rel="me" href="https://social.waystone.cc/@SharpenedFerret" style="color: rgb(0,0,0);background: rgba(255,255,255,0);" target="_blank" title="Mastodon">
+                    <ion-icon name='logo-mastodon'></ion-icon>
+                </a>
+                <a href="https://twitter.com/SharpenedFerret" style="color: rgb(0,0,0);background: rgba(255,255,255,0);" target="_blank" title="Twitter">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+                <a href="https://www.linkedin.com/in/neil-woodhouse" style="color: rgb(0,0,0);background: rgba(255,255,255,0);" target="_blank" title="LinkedIn">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+                <a href="https://github.com/sharpened-ferret" style="color: rgb(0,0,0);background: rgba(255,255,255,0);" target="_blank" title="Github">
+                    <ion-icon name="logo-github"></ion-icon>
+                </a>
+                <a href="https://www.instagram.com/neiltwoodhouse/" style="color: rgb(0,0,0);background: rgba(255,255,255,0);" target="_blank" title="Instagram">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+            </div>
+            <div class="links"><a href="/cv">About me</a><a href="/contact-me">Contact me</a><a href="/projects">Projects</a></div>
+        </div>
+    </footer>
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/bootstrap/js/bootstrap.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

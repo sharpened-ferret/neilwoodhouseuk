@@ -1,0 +1,107 @@
+{% extends "base" %}
+{% block title %}Projects{% endblock title %}
+
+{% block pagecontent %}
+<main class="page projects-page">
+    <section class="portfolio-block projects-cards projects-horizontal">
+        <div class="container">
+            <div class="heading">
+                <h2 style="padding: 0px 0px 0px;">Projects &amp; Competitions</h2>
+            </div>
+            <div class="intro">
+                <h2 class="text-center" style="margin: 0px 0px 20px;">Competitions</h2>
+                <p class="text-center">These are write-ups about the different Computer Science competitions that I've taken part in.</p>
+            </div>
+            <div class="row projects">
+                <div class="col-sm-6 item">
+                    <div class="row"><a class="stretched-link" href="projects/google-hashcode">
+                        <div class="col-md-12 col-lg-5"><a href="projects/google-hashcode"><img class="img-fluid" src="static/img/Projects/Google-Hash-Code.jpg" alt="Google Hash Code Logo" width="100%"></a></div>
+                        <div class="col">
+                            <h3 class="name">Google Hash Code</h3>
+                            <p class="description">I've competed in the Google Hash Code competition for the past 3 years, with my team coming 46th in the UK in 2022</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 item">
+                    <div class="row"><a class="stretched-link" href="projects/bae-systems-ctf">
+                        <div class="col-md-12 col-lg-5"><a href="projects/bae-systems-ctf"><img class="img-fluid" src="static/img/Projects/baesystemsctf.png" alt="BAE Systems CTF Logo"></a></div>
+                        <div class="col">
+                            <h3 class="name">BAE Systems CTF</h3>
+                            <p class="description">In March 2022 I competed in a capture the flag cybersecurity competition at Swansea University, organised by BAE systems. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 item">
+                    <div class="row"><a class="stretched-link" href="projects/festival-of-code">
+                        <div class="col-md-12 col-lg-5"><a href="projects/festival-of-code"><img class="img-fluid" src="static/img/Projects/festival%20of%20code.jpg" alt="Festival of Code Logo"></a></div>
+                        <div class="col">
+                            <h3 class="name">Festival of Code 2014/2015</h3>
+                            <p class="description">In 2014 and 2015 I took part in the Festival of Code, a week-long event, organised by Young Rewired State</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center" style="margin: 0px 0px 20px;">Recent Projects</h2>
+                <p class="text-center">These are pages for documenting projects that I have previously worked on, or am currently developing.</p>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0" style="padding: 10px;"><a class="stretched-link" href="projects/allendale-holidays-website"></a><a href="#"><img class="card-img-top" src="static/img/Projects/park_logo_400x162.jpg" alt="Allendale Holidays Logo" style="box-shadow: none;"></a>
+                        <div class="card-body">
+                            <h6><a href="#">Website Rebuild for Allendale Holidays</a></h6>
+                            <p class="text-muted card-text">Over the summer of 2020, I worked to redesign and rebuild the website for Allendale Holidays, a small tourism business in the North of England.</p>
+                        </div>
+                    </div>
+                    <div class="card border-0" style="padding: 10px;"><a class="stretched-link" href="projects/battlefield-labyrinth"></a><a href="#"><img class="card-img-top" src="static/img/Projects/labyrinth-thumb.jpg" alt="Battlefield Labyrinth Screenshot" style="box-shadow: none;"></a>
+                        <div class="card-body">
+                            <h6><a href="#">Battlefield: Labyrinth</a></h6>
+                            <p class="text-muted card-text">A group 2D Game Development project in Autumn 2020, using Java and JavaFX.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0"><a class="stretched-link" href="projects/pathfinding"></a><a href="#"><img class="card-img-top" src="static/img/Projects/pathfinding%20demo%20thumbnail.jpg" alt="Pathfinding Demo Screenshot" style="box-shadow: none;"></a>
+                        <div class="card-body">
+                            <h6>Grid-Based Pathfinding</h6>
+                            <p class="text-muted card-text">In spring 2020, I developed a 2d grid-based pathfinding system, in C#, for a friend's Unity game project.</p>
+                        </div>
+                    </div>
+                    <div class="card border-0" style="padding: 10px;"><a class="stretched-link" href="projects/recipe-viewer"></a><a href="#"><img class="card-img-top" src="static/img/Projects/recipe-viewer-thumb.jpg" alt="Recipe Viewer Homescreen" style="box-shadow: none;"></a>
+                        <div class="card-body">
+                            <h6><a href="#">Recipe Viewer</a></h6>
+                            <p class="text-muted card-text">In summer 2021, I designed and developed a Python web-app to store, reformat, and view online recipes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0" style="padding: 10px;"><a class="stretched-link" href="projects/lora-chat"></a><a href="#"><img class="card-img-top" src="static/img/Projects/lorachat-thumb.jpg" alt="LoRa Chat Network Topology" style="box-shadow: none;"></a>
+                        <div class="card-body">
+                            <h6><a href="#">LoRa Chat</a></h6>
+                            <p class="text-muted card-text">A long-range, low-power wireless chat network using LoRa and ESP32 micro-controllers</p>
+                        </div>
+                    </div>
+                    <div class="card border-0"><a class="stretched-link" href="projects/personal-website"></a>
+                        <a href="#">
+                            <div class="portfolio-laptop-mockup">
+                                <div class="screen" style="background: rgb(52,58,64);">
+                                    <div class="screen-content" style="background: #ffffff;"><i class="fa fa-map-signs d-flex justify-content-center" style="font-size: 36px;padding-top: 20%;color: rgb(13,130,207);"></i>
+                                        <p class="d-flex justify-content-center" style="color: rgb(46,46,47);">You are Here</p>
+                                    </div>
+                                </div>
+                                <div class="keyboard" style="background: rgb(52,58,64);"></div>
+                            </div>
+                        </a>
+                        <div class="card-body">
+                            <h6>My Personal Site</h6>
+                            <p class="text-muted card-text">I started development on this site in Autumn 2020, to practice my web development skills, and to create somewhere to host projects I'm involved in.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock pagecontent %}

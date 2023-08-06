@@ -1,0 +1,48 @@
+{% extends "base" %}
+{% block head %}
+    {{ super() }}
+    <link rel="stylesheet" href="static/css/homepage.css">
+{% endblock head %}
+{% block title %}Home{% endblock title %}
+
+{% block pagecontent %}
+<main class="page landing-page">
+    <section class="portfolio-block block-intro">
+        <img class="img-fluid d-block mx-auto mb-5 profile-img" height="50%" src="static/img/profile_image_thumb.jpg" alt="Profile Picture of Neil Woodhouse">
+        <div class="container">
+            <div class="about-me">
+                <p>Hello, I am <strong>Neil Woodhouse</strong>. I am a 4th year Computer Science MSci student, freelance developer, and amateur photographer.</p><a class="btn btn-outline-primary" role="button" href="contact-me">Contact Me</a></div>
+        </div>
+    </section>
+    <section class="portfolio-block photography">
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-md-6 col-lg-4 item zoom-on-hover"><a href="/gallery"><img class="img-fluid image" src="static/img/Gallery/thumbnails/DSC05577_thumb.jpg" alt="Swansea University and Beach"></a></div>
+                <div class="col-md-6 col-lg-4 item zoom-on-hover"><a href="/gallery"><img class="img-fluid image" src="static/img/Gallery/thumbnails/DSC05714_thumb.jpg" alt="Two lambs in a Field"></a></div>
+                <div class="col-md-6 col-lg-4 item zoom-on-hover"><a href="/gallery"><img class="img-fluid image" src="static/img/Gallery/thumbnails/DSC05505_thumb.jpg" alt="Waves on the Sea"></a></div>
+            </div>
+        </div>
+    </section>
+    <section class="portfolio-block skills"></section>
+</main>
+<section class="portfolio-block website" style="background: #343a40;">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-12 col-lg-5 offset-lg-1 text" style="color: rgb(255,255,255);">
+                <h3>About the Site</h3>
+                <p>This site is still under <a href="projects/personal-website">development</a>.&nbsp;<br>It's main purpose currently is to host my CV, along with links to my ongoing and completed projects.&nbsp;</p>
+            </div>
+            <div class="col-md-12 col-lg-5">
+                <div class="portfolio-laptop-mockup">
+                    <div class="screen">
+                        <div class="screen-content" style="background: #282d32;"><i class="fa fa-map-signs d-flex justify-content-center" style="font-size: 36px;padding-top: 20%;color: rgb(13,130,207);"></i>
+                            <p class="d-flex justify-content-center" style="color: rgb(225,225,225);">You are Here</p>
+                        </div>
+                    </div>
+                    <div class="keyboard"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock pagecontent %}
