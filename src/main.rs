@@ -13,11 +13,15 @@ fn projects() -> Template {
     Template::render("projects", context! {})
 }
 
+#[get("/cv")]
+fn cv() -> Template {
+    Template::render("cv", context! {})
+}
 
 #[launch]
 fn rocket() -> _ {
     rocket::build()
-        .mount("/", routes![index, projects])
+        .mount("/", routes![index, projects, cv])
         .mount("/static", FileServer::from("static"))
         .attach(Template::fairing())
 }

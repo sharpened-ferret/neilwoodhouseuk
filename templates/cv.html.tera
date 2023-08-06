@@ -1,0 +1,182 @@
+{% extends "base" %}
+{% block title %}CV{% endblock title %}
+
+{% block pagecontent %}
+<main class="page cv-page">
+    <section class="portfolio-block block-intro border-bottom">
+        <div class="container">
+            <div class="about-me">
+                <p>Hello, I am <strong>Neil Woodhouse</strong>. I am a recent Computer Science MSci graduate, Freelance developer, and amateur photographer.<br></p>
+                <a class="btn btn-outline-primary" role="button" href="contact-me">Hire me</a>
+            </div>
+        </div>
+    </section>
+    <section class="portfolio-block cv">
+        <div class="container">
+            <div class="work-experience group">
+                <div class="heading">
+                    <h2 class="text-center">Work Experience</h2>
+                </div>
+                <div class="item">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3>Teaching Assistant</h3>
+                            <h4 class="organization">Swansea University</h4>
+                        </div>
+                        <div class="col-md-6"><span class="period">September 2021 - June 2023</span></div>
+                    </div>
+                    <p class="text-muted">I am curently working part-time as a teaching assistant for Swansea University, helping teach basic Object-Oriented Programming, Software Testing techniques, and Functional Programming to first and second year students.</p>
+                </div>
+                <div class="item">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3>Computing Tutor</h3>
+                            <h4 class="organization">Freelance</h4>
+                        </div>
+                        <div class="col-md-6"><span class="period">August 2020</span></div>
+                    </div>
+                    <p class="text-muted">In August 2020, I did weekly digital tutoring sessions for a GCSE Computing student. This work mainly centred around teaching them Python 3, along with core principles of how to break down problems into implementable steps.&nbsp;<br></p>
+                </div>
+                <div class="item">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3>Web Developer</h3>
+                            <h4 class="organization">Allendale Holidays</h4>
+                        </div>
+                        <div class="col-md-6"><span class="period">July 2020 - September 2020</span></div>
+                    </div>
+                    <p class="text-muted">Over the summer of 2020, I worked part-time on a rebuild of the website 'www.allendale-holidays.co.uk', for Allendale Caravan Park.&nbsp;<br>For this job I designed and deployed a website for the consumer's specification, featuring
+                        a product catalogue, image gallery, blog, and online store. This site was built using Joomla CMS and deployed to a Linux hosting solution.<br>During development, I used a local server running on a virtual Ubuntu environment,
+                        using VMWare Player.<br><a href="projects/allendale-holidays-website">More Info</a></p>
+                </div>
+                <div class="item">
+                    <div class="row">
+                        <div class="col-6">
+                            <h3>Fibre Optic Networking<br></h3>
+                            <h4 class="organization">B4RN</h4>
+                        </div>
+                        <div class="col-md-6"><span class="period">2018. 2019, 2020&nbsp;</span></div>
+                    </div>
+                    <p class="text-muted">In February 2018, I did a week's work experience with B4RN, a community fibre optic builder and ISP based in Lancashire that builds gigabit+ networks in rural areas.&nbsp;<br>I worked with full-time employees on deploying new areas
+                        of network,blowing and splicing fibre optic cabling, and walking new customers through the service contract. I also worked on configuring new switches to be deployed to distribution cabinets, and learnt about the organisation
+                        structure, working in a team at a small company.<br><br>I continued working with B4RN in early 2019 and summer 2020, through volunteering with the B4AV partner project in my local area in Northumberland. This led to the network
+                        beginning to go live in August 2020 before my return to University.</p>
+                </div>
+            </div>
+            <div class="education group">
+                <div class="heading">
+                    <h2 class="text-center">Education</h2>
+                </div>
+                <div class="item">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3>Computer Science MSci - 1st</h3>
+                            <h4 class="organization">Swansea University</h4>
+                        </div>
+                        <div class="col-6"><span class="period">2019 - 2023</span></div>
+                    </div>
+                    <p class="text-muted" style="font-size: 17px;">I am currently in my 4th Year of a Computer Science integrated masters at Swansea University.<br>My average grade over the last 3 years is 76%.</p>
+                </div>
+                <div class="item">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3>A-Levels</h3>
+                            <h4 class="organization">Queen Elizabeth High School, Hexham</h4>
+                        </div>
+                        <div class="col-md-6"><span class="period">2017-2019</span></div>
+                    </div>
+                    <p class="text-muted" style="margin: 0px 0px 0px;"><strong>Physics - B</strong><br><strong>Economics - C</strong><br><strong>Mathematics - D</strong></p>
+                </div>
+                <div class="item">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3>GCSEs</h3>
+                            <h4 class="organization">Queen Elizabeth High School, Hexham</h4>
+                        </div>
+                        <div class="col-md-6"><span class="period">2015-2017</span></div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p class="text-muted"><strong>Computing - A*</strong><br><strong>Physics - A*</strong><br><strong>Chemistry - A</strong></p>
+                        </div>
+                        <div class="col">
+                            <p class="text-muted"><strong>Maths - 8</strong><br><strong>English Language - 5</strong><br><strong>English Literature - 6</strong></p>
+                        </div>
+                        <div class="col">
+                            <p class="text-muted"><strong>History - A</strong><br><strong>Electronics - A</strong><br><strong>German - A</strong><br></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="education group">
+                <div class="heading">
+                    <h2 class="text-center">Extracurricular Experience</h2>
+                </div>
+                <div class="item">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3>BAE Systems CTF</h3>
+                        </div>
+                        <div class="col-6"><span class="period">March 2022</span></div>
+                    </div>
+                    <p class="text-muted">In 2022, I entered a one-day CyberSecurity Capture the Flag event organised by BAE Systems Applied Intelligence. <br>
+                        I competed with a team to extract flag tokens from vulnerable target systems using a variety of tools and techniques, ranging from SQL injections to binary exploits. <a href="projects/bae-systems-ctf">More Info</a></p>
+                </div>
+                <div class="item">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3>Google HashCode</h3>
+                        </div>
+                        <div class="col-6"><span class="period">April 2020, 2021, & 2022</span></div>
+                    </div>
+                    <p class="text-muted">For the past three years, I've taken part in Google HashCode, competing to solve optimisation problems in a 4-hour international competition with a team of friends.
+                        It has provided valuable experience in group development on a tight timescale and incremental problem-solving. <a href="projects/google-hashcode">More Info</a></p>
+                </div>
+                <div class="item">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3>Festival of Code&nbsp;</h3>
+                        </div>
+                        <div class="col-md-6"><span class="period">2014 &amp; 2015</span></div>
+                    </div>
+                    <p class="text-muted">I took part in the Festival of Code, organised by Young Rewired State, in 2014 and 2015. This involved a week of working in a team to create a web application, making use of open data sets, in local event centres, At the end of
+                        the week, the teams would gather at a national centre to present our finished application to a panel of judges and hundreds of other participants.&nbsp;<br><br>For these competitions I did front end development in HTML and
+                        CSS, along with Javascript to interface with OpenStreetMaps. For the back-end development, we wrote a web server in Python 2.7, making use of the Flask library, and used an SQL database to store our datasets.&nbsp;<br><br>These
+                        events also gave me experience in working to an immovable deadline, and helped improve my presentation skills and confidence, through presenting technical details to hundreds of other developers.<br><a href="projects/festival-of-code">More Info</a></p>
+                </div>
+            </div>
+            <div class="extracurricular group">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="skills portfolio-info-card">
+                            <h2>Recent Languages</h2>
+                            <h3>Java</h3>
+                            <h3>Python</h3>
+                            <h3>C#</h3>
+                            <h3>C++</h3>
+                            <h3>Dart</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="skills portfolio-info-card">
+                            <h2>Recent Technologies</h2>
+                            <h3>Docker</h3>
+                            <h3>Django</h3>
+                            <h3>Git</h3>
+                            <h3>Laravel</h3>
+                            <h3>Nginx</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hobbies group">
+                <div class="heading">
+                    <h2 class="text-center">Hobbies</h2>
+                </div>
+                <p class="text-center text-muted">I like reading, mainly Sci-fi and fantasy novels, along with an eclectic mix of tabletop TTRPG rulebooks, technical documents, and news.<br><br>I've spent an embarrassing amount of time in a variety of games, mainly grand
+                    strategy and RPGS, often spending more time getting mods to play nice with each other than actually playing the game.<br><br>When I have some time to spare, I like to do a bit of amateur photography and occasional digital drawing.</p>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock pagecontent %}
