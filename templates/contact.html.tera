@@ -1,0 +1,20 @@
+{% extends "base" %}
+{% block title %}Contact Me{% endblock title %}
+
+{% block pagecontent %}
+<main class="page hire-me-page">
+    <section class="portfolio-block hire-me">
+        <div class="container">
+            <div class="heading">
+                <h2>Contact Me</h2>
+            </div>
+            <form data-bss-subject="Website Form Message" data-bss-recipient="4b14b706b64f3639141984121a17f414">
+                <div class="form-group"><label for="name">Name</label><input class="form-control" type="text" id="name" name="Name" required=""></div>
+                <div class="form-group"><label for="email">Your Email</label><input class="form-control" type="email" id="email" name="Email" required=""></div>
+                <div class="form-group"><label for="message">Message</label><textarea class="form-control" id="message" name="message" required=""></textarea></div>
+                <div class="form-group"><button class="btn btn-primary btn-block" type="submit">Send</button></div>
+            </form>
+        </div>
+    </section>
+</main>
+{% endblock pagecontent %}
