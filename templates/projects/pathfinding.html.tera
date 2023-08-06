@@ -1,0 +1,20 @@
+{% extends "project" %}
+{% block title %}Pathfinding{% endblock title %}
+{% block projectheading %}Pathfinding (C#){% endblock projectheading %}
+{% block projectcontent %}
+<div class="row">
+    <div class="col-12 col-md-6 offset-md-1 info">
+        <p>In spring 2020, I developed a 2d grid-based pathfinding system, available <a href="https://github.com/sharpened-ferret/Pathfinding-Csharp">here</a>, for a friend's Unity game project. For this project I researched the costs and
+            benefits of different pathfinding algorithms, settling on implementing a version of A-star.&nbsp;<br></p>
+        <p>My code needed to check whether a possible route existed through the randomly generated mazes of the game, to ensure the player would never encounter an impossible level.</p>
+        <p>This project was interesting for picking up a bit of C# syntax, and for practicing using debuggers, while fixing a bug in the parent node assignment during the pathfinding script.&nbsp;<br></p>
+    </div>
+    <div class="col"><img src="/static/img/Projects/pathfinding%20demo.jpg" width="100%"></div>
+</div>
+<div class="row">
+    <div class="col-12 col-md-6 offset-md-1 info"></div>
+    <div class="col">
+        <p style="font-size: smaller;padding: 5px;">For early testing, I prototyped code in python to produce HTML grid outputs. Here, empty squares are passable, while shaded squares are impassable walls. The grids were randomly generated, and the AStar path is shown in white.</p>
+    </div>
+</div>
+{% endblock projectcontent %}

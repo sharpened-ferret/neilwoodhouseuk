@@ -1,0 +1,14 @@
+{% extends "base" %}
+{% block pagecontent %}
+<main class="page project-page">
+    <section class="portfolio-block project">
+        <div class="container">
+            <div class="heading" style="margin: 0px 0px 50px;">
+                <h1>{% block projectheading %}{% endblock projectheading %}</h1>
+            </div>
+            {% block projectcontent %}
+            {% endblock projectcontent %}
+        </div>
+    </section>
+</main>
+{% endblock pagecontent %}

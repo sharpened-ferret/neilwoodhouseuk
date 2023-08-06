@@ -6,14 +6,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>{% block title %}{% endblock title %} - Neil Woodhouse</title>
-    <link rel="stylesheet" href="static/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
-    <link rel="stylesheet" href="static/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="static/fonts/ionicons.min.css">
-    <link rel="stylesheet" href="static/css/Contact-Form-Clean.css">
-    <link rel="stylesheet" href="static/css/less-muted-text.css">
-    <link rel="stylesheet" href="static/css/Projects-Horizontal.css">
-    <link rel="icon" type="image/x-icon" href="static/img/favicon.ico">
+    <link rel="stylesheet" href="/static/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="/static/css/Contact-Form-Clean.css">
+    <link rel="stylesheet" href="/static/css/less-muted-text.css">
+    <link rel="stylesheet" href="/static/css/Projects-Horizontal.css">
+    <link rel="icon" type="image/x-icon" href="/static/img/favicon.ico">
     {% endblock head %}
 </head>
 
@@ -60,8 +60,8 @@
         </div>
     </footer>
     {% block pagescripts %}
-    <script src="static/js/jquery.min.js"></script>
-    <script src="static/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/bootstrap/js/bootstrap.min.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     {% endblock pagescripts %}

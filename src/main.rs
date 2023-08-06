@@ -41,10 +41,15 @@ fn contact() -> Template {
     Template::render("contact", context! {})
 }
 
+#[get("/projects/pathfinding")]
+fn projects_pathfinding() -> Template {
+    Template::render("projects/pathfinding", context! {})
+}
+
 #[launch]
 fn rocket() -> _ {
     rocket::build()
-        .mount("/", routes![index, projects, gallery, cv, contact])
+        .mount("/", routes![index, projects, gallery, cv, contact, projects_pathfinding])
         .mount("/static", FileServer::from("static"))
         .attach(Template::fairing())
 }
