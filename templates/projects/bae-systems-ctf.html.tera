@@ -1,0 +1,18 @@
+{% extends "project" %}
+{% block title %}BAE Systems CTF{% endblock title %}
+{% block projectheading %}BAE Systems CTF{% endblock projectheading %}
+{% block projectcontent %}
+<div class="row">
+    <div class="col-12 col-md-6 offset-md-1 info">
+        <p>In March 2022, I entered a cybersecurity Capture the Flag competition at Swansea University, organised by BAE Systems Applied Intelligence. <br>I worked in a team with 
+            <a href="https://www.linkedin.com/in/o-ferris-62aa00163">Oliver Ferris</a>, 
+            <a href="https://www.linkedin.com/in/asinsa-guniyangodage/">Asinsa Guniyangodage</a> and 
+            <a href="https://www.linkedin.com/in/jmurray-cs">Joshua Murray</a>, with us placing 2nd in the competition overall.
+        </p>
+        <p>Through the course of the day, we competed to extract flag tokens from a number of different target systems, including websites, databases, binary executables, and encrypted filesystems.</p>
+        <p>Challenges were divided into a number of categories including forensics, web, cryptography, networking, binary exploits, and reverse-engineering.</p>
+        <p>Some of these were a great opportunity to practice existing skills, extracting data from unknown file-systems, cracking passwords, or creating SQL injections and buffer overflows. <br>Others, such as reverse-engineering, were a great introduction to new tools and techniques for decompilation and static analysis of programs. </p>
+    </div>
+    <div class="col"><img src="/static/img/Projects/baesystemsctf.png" width="100%"></div>
+</div>
+{% endblock projectcontent %}

@@ -1,0 +1,18 @@
+{% extends "project" %}
+{% block title %}Recipe Viewer{% endblock title %}
+{% block projectheading %}Recipe Viewer{% endblock projectheading %}
+{% block projectcontent %}
+<div class="row">
+    <div class="col-12 col-md-6 offset-md-1 info">
+        <p>This project was brought on by frustration at poorly-formatted recipe websites, and those that frequently change their URL schemes, thus breaking bookmarks.<br>After trying to relocate a particularly troublesome bread recipe, I had a poke around the webcode, and found that most recipe websites are complient with the <a href="https://schema.org/Recipe" target="_blank">Recipe Schema</a> standard.</p>
+        <p>I started this project with the goal of creating a local Python webapp that could take a recipe URL for a schema-complient webpage, and store and display a reformatted version. </p>
+        <p>The project took just over a week from inital idea to first release version, using <a href="https://www.djangoproject.com/" target="_blank">Django</a> for the webserver backend. <br>It allows users to add recipes by URL, which stores the recipe data in a local SQLite database. <br>Users can then search stored recipes, by name or keyword, and view them in a standard template format, which can be customised to their preferences using its own CSS stylesheet. <br></p>
+        <p>The latest release version can be found <a href="https://github.com/sharpened-ferret/RecipeViewer" target="_blank">here</a> along with instructions on installation and use.</p>
+    </div>
+    <div class="col">
+        <img src="/static/img/Projects/recipe-viewer-1.jpg" width="100%">
+        <hr/>
+        <img src="/static/img/Projects/recipe-viewer-2.jpg" width="100%">
+    </div>
+</div>
+{% endblock projectcontent %}

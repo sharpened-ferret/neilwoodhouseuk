@@ -1,0 +1,14 @@
+{% extends "project" %}
+{% block title %}Allendale Holidays{% endblock title %}
+{% block projectheading %}Allendale-Holidays Website{% endblock projectheading %}
+{% block projectcontent %}
+<div class="row">
+    <div class="col-12 col-md-6 offset-md-1 info">
+        <p>Over the summer of 2020, I worked for Allendale Holidays, redesigning and rebuilding their <a href="https://www.allendale-holidays.co.uk/" target="_blank">website</a>.<br></p>
+        <p>I developed the website using <a href="https://www.joomla.org/" target="_blank">Joomla</a>, to allow for easy content maintenance by the clients, since they were used to this CMS from the previous iteration of the website.&nbsp;<br>During development,
+            I used an Ubuntu VM running on VMWare Player to provide a virtualised development server, before deploying the finished project to the client's Linux web-hosting provider.</p>
+        <p>This job had some great variation, requiring me to integrate a range of features, including a gallery, blogging engine, CAPTCHA protection, and a web-store for caravan owners to make online purchases from the business.&nbsp;<br></p>
+    </div>
+    <div class="col"><img src="/static/img/Projects/allendale-holidays-after.jpg" width="100%"></div>
+</div>
+{% endblock projectcontent %}

@@ -1,0 +1,22 @@
+{% extends "project" %}
+{% block title %}Personal Site{% endblock title %}
+{% block projectheading %}My Personal Site{% endblock projectheading %}
+{% block projectcontent %}
+<div class="row">
+    <div class="col-12 col-md-6 offset-md-1 info">
+        <p>I started working on this site in Autumn 2020, as a way to relearn HTML and CSS frameworks.</p>
+        <p>The main purpose of the site is to host links to projects I'm involved in, document past work, and provide a contact point.</p>
+        <p>It started out as a static HTML site hosted on Github pages. This was inconvienent to update, so I recently migrated to running off my home server using a backend written in Rust using the <a href="https://rocket.rs/" target="_blank">Rocket</a> web framework. </p>
+    </div>
+    <div class="col">
+        <div class="portfolio-laptop-mockup">
+            <div class="screen" style="background: rgb(52,58,64);">
+                <div class="screen-content" style="background: #ffffff;"><i class="fa fa-map-signs d-flex justify-content-center" style="font-size: 36px;padding-top: 20%;color: rgb(13,130,207);"></i>
+                    <p class="d-flex justify-content-center" style="color: rgb(46,46,47);">You are Here</p>
+                </div>
+            </div>
+            <div class="keyboard" style="background: rgb(52,58,64);"></div>
+        </div>
+    </div>
+</div>
+{% endblock projectcontent %}

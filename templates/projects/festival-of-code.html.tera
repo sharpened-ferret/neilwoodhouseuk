@@ -1,0 +1,20 @@
+{% extends "project" %}
+{% block title %}Festival of Code{% endblock title %}
+{% block projectheading %}Festival of Code{% endblock projectheading %}
+{% block projectcontent %}
+<div class="row">
+    <div class="col-12 col-md-6 offset-md-1 info">
+        <p>I took part in the Festival of Code, organised by Young Rewired State, in 2014 and 2015. This involved a week of working in a team to create a web application, making use of open data sets, in local event centres, At the end of
+            the week, the teams would gather at a national centre to present our finished application to a panel of judges and hundreds of other participants<br></p>
+        <p>For these competitions I did front end development in HTML and CSS, along with Javascript to interface with OpenStreetMaps. For the back-end development, we wrote a web server in Python 2.7, making use of the Flask library, and
+            used an SQL database to store our datasets.&nbsp;<br></p>
+        <p>These events also gave me experience in working to an immovable deadline, and helped improve my presentation skills and confidence, through presenting technical details to hundreds of other developers.&nbsp;<br></p>
+    </div>
+    <div class="col"><img src="/static/img/Projects/festival%20of%20code.jpg" width="100%"></div>
+</div>
+<div class="row">
+    <div class="col-11 offset-1 info">
+        <p>The main python libraries we used for this project were, Flask, Werkzeug, and Jinja2.</p>
+    </div>
+</div>
+{% endblock projectcontent %}

@@ -1,0 +1,13 @@
+{% extends "project" %}
+{% block title %}Google Hash Code{% endblock title %}
+{% block projectheading %}Google Hash Code{% endblock projectheading %}
+{% block projectcontent %}
+<div class="row">
+    <div class="col-12 col-md-6 offset-md-1 info">
+        <p>I first competed in Google Hash Code in spring 2020, with <a href="https://www.linkedin.com/in/alfie-richardson-683a85207/">Alfie Richardson</a>, and <a href="https://www.linkedin.com/in/asinsa-guniyangodage/">Asinsa Guniyangodage</a>, coming 60th in the UK.</p>
+        <p>We have since taken part in 2021 and 2022, adding <a href="https://www.linkedin.com/in/jmurray-cs">Joshua Murray</a> to our team and improving to 46th in the UK in 2022.</p>
+        <p>It's a great experience, providing wonderful, frustrating, and challenging as we rush to parse and solve the problem, and desperately trying to optimise our solution inside the 4hr competition time. </p>
+    </div>
+    <div class="col"><img src="/static/img/Projects/Google-Hash-Code.jpg" width="100%"></div>
+</div>
+{% endblock projectcontent %}

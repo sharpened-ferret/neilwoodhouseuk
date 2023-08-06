@@ -1,0 +1,48 @@
+{% extends "project" %}
+{% block title %}LoRa Chat{% endblock title %}
+{% block projectheading %}LoRa Chat{% endblock projectheading %}
+{% block projectcontent %}
+<div class="row">
+    <div class="col-12 col-md-6 offset-md-1 info">
+        <p>LoRa Chat is a low-power, long-range wireless chat system developed for my 3rd-year dissertation project at Swansea University. It uses the <a href="https://lora-alliance.org/">LoRa</a> radio standard to provide a wide-area text-chat network.</p> 
+        <br>
+        <p>
+            The project aimed to address the issue of poor wireless communications coverage in remote rural areas. This system would provide a baseline service of simple text communications. 
+            <br>
+            The primary considerations were that any system must be cheap and low-power, to ensure availability to any who need it, and to reduce the reliance on existing infrastructure. 
+        </p>
+        <br>
+        <p>The network uses four main components:</p>
+        
+        <h4>1. Client Device</h4>
+        <p>A client device such as a phone, laptop, or tablet is used to connect to the network over a WLAN. This device may then be used to send and recieve messages.</p>
+
+        <h4>2. Gateway Node</h4>
+        <p>A gateway node is a small device that clients connect to. It is made up of an ESP32 micro-controller and an RFM95W wireless transciever.</p>
+        <p>This hosts a WLAN which clients connect to. They can send messages to it, via local website or websocket. The gateway uses its transciever to broadcast these messages to the network over LoRa sub-Ghz radio, and forwards any responses to connected clients. </p>
+        
+        <h4>3. Endpoint Node</h4>
+        <p>An endpoint node is another ESP32- and RFM95W-based device. It is connected to a central chat server, either over LAN, or over a regular internet connection.</p>
+        <p>This device recieves LoRa messages relaying them to the server, and broadcasts messages from the server to the gateway network.</p>
+
+        <h4>4. Chat Server</h4>
+        <p>The central chat server processes messages, allowing for chat-history storage, moderation, and enabling the network to also be accessible over the internet to remote users.</p>
+
+
+    </div>
+    <div class="col">
+        <figure>
+            <img src="/static/img/Projects/lorachat-network-structure.jpg" width="100%" alt="A diagram of the LoRaChat network structure.">
+            <figcaption><p>The structure of the LoRa Chat network</p></figcaption>
+        </figure>
+        <figure>
+            <img src="/static/img/Projects/lorachat-node.jpg" width="100%" alt="A photo of the ESP32 and RFM95W devices used for Gatway and Endpoint nodes.">
+            <figcaption><p>The devices used for Gateway and Endpoint nodes</p></figcaption>
+        </figure>   
+        <figure>
+            <img src="/static/img/Projects/lorachat-client.jpg" width="100%" alt="A screenshot of a windows chat app for LoRa Chat.">
+            <figcaption><p>A windows chat application for LoRa Chat</p></figcaption>
+        </figure>
+    </div>
+</div>
+{% endblock projectcontent %}

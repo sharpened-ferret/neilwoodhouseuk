@@ -1,0 +1,25 @@
+{% extends "project" %}
+{% block title %}Battlefield: Labyrinth{% endblock title %}
+{% block projectheading %}Battlefield: Labyrinth{% endblock projectheading %}
+{% block projectcontent %}
+<div class="row">
+    <div class="col-12 col-md-6 offset-md-1 info">
+        <p>In autumn 2020, I worked in a group of eight to develop a 2D game in Java, as part of our Year 2 Software Engineering module at Swansea University.</p>
+        <p>Our game is a local multiplayer tile-based game, inspired by the classic boardgame <a href="https://en.wikipedia.org/wiki/Labyrinth_(board_game)">Labyrinth</a>. Players race, to reach a set goal tile, from their starting positions on a constantly changing gameboard.</p>
+        <p>Players take turns to draw a random board tile and play it onto the gameboard. This pushes existing tiles out of the way, modifying the layout. <br>Players may sometimes draw abilities, rather than board tiles, which can be played immediately, or stored for a later turn.<br>Players may then choose to play an ability, if they have one, which have various gameplay effects, such as doubling a player's movement, or denying movement onto a section of board to all players.<br>Finally, they choose where to move their character on the board.</p>
+        <br>
+        <p>For this project, we first planned a project structure and object breakdown using UML diagrams, and estimated the implementation time for each section. We assigned these blocks of work between the team, trying to balance workload and difficulty, based on individual experience.</p>
+        <p>My primary development areas for the game where in creating the layout and interaction behaviour for the gameboard and to create a controller to interface with the UI and gameplay modules developed by other team members. I also implemented the abilities system.</p>
+        <hr>
+        <p>The source code for this project is available <a href="https://www.github.com/joshcodd/Labyrinth" target="_blank">here</a>, along with the latest compiled release versions.</p>
+        <p>Mirror Download:
+            <a href="/static/downloads/BattleField-Labyrinth-Executable-JAR-v1.0.zip" download><i class="fa fa-download mr-2"></i>BattleField-Labyrinth-Java-v1.0</a>
+        </p>
+    </div>
+    <div class="col">
+        <img src="/static/img/Projects/labyrinth-1.jpg" width="100%">
+        <img src="/static/img/Projects/labyrinth-2.jpg" width="100%">
+        <img src="/static/img/Projects/labyrinth-anim-1.gif" width="100%">
+    </div>
+</div>
+{% endblock projectcontent %}
