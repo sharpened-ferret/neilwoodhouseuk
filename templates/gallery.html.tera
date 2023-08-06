@@ -1,0 +1,36 @@
+{% extends "base" %}
+{% block head %}
+    {{ super() }}
+    <link rel="stylesheet" href="static/css/Filterable-Gallery-with-Lightbox.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+    <link rel="stylesheet" href="static/css/Lightbox-Gallery.css">
+{% endblock head %}
+{% block title %}Gallery{% endblock title %}
+
+
+{% block pagecontent %}
+<main class="page">
+    <section class="portfolio-block">
+        <div class="container" style="max-width: 100vw;">
+            <div class="heading">
+                <h2 class="text-center" style="padding: 0px 0px 0px;">Gallery</h2>
+            </div>
+            <div class="filtr-controls"><span class="active" data-filter="all">all </span><span data-filter="1">Northumberland</span><span data-filter="2">Wales</span><span data-filter="3">Other</span></div>
+            <div class="row filtr-container"> 
+                {% for path in paths_wales %}
+                <div class="col-6 col-sm-4 col-md-3 filtr-item" data-category="2"><a href="static/img/Gallery/Wales/{{path}}.jpg"><img class="img-fluid" src="static/img/Gallery/thumbnails/Wales/{{path}}_thumb.jpg" alt="image"></a></div>
+                {% endfor %}
+                {% for path in paths_northumberland %}
+                <div class="col-6 col-sm-4 col-md-3 filtr-item" data-category="1"><a href="static/img/Gallery/Northumberland/{{path}}.jpg"><img class="img-fluid" src="static/img/Gallery/thumbnails/Northumberland/{{path}}_thumb.jpg" alt="image"></a></div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock pagecontent %}
+
+{% block pagescripts %}
+    {{ super() }}
+    <script src="static/js/Filterable-Gallery-with-Lightbox.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+{% endblock pagescripts %}

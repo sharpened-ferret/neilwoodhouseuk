@@ -17,9 +17,9 @@
     <section class="portfolio-block photography">
         <div class="container">
             <div class="row no-gutters">
-                <div class="col-md-6 col-lg-4 item zoom-on-hover"><a href="/gallery"><img class="img-fluid image" src="static/img/Gallery/thumbnails/DSC05577_thumb.jpg" alt="Swansea University and Beach"></a></div>
-                <div class="col-md-6 col-lg-4 item zoom-on-hover"><a href="/gallery"><img class="img-fluid image" src="static/img/Gallery/thumbnails/DSC05714_thumb.jpg" alt="Two lambs in a Field"></a></div>
-                <div class="col-md-6 col-lg-4 item zoom-on-hover"><a href="/gallery"><img class="img-fluid image" src="static/img/Gallery/thumbnails/DSC05505_thumb.jpg" alt="Waves on the Sea"></a></div>
+                <div class="col-md-6 col-lg-4 item zoom-on-hover"><a href="/gallery"><img class="img-fluid image" src="static/img/Gallery/thumbnails/Wales/DSC05577_thumb.jpg" alt="Swansea University and Beach"></a></div>
+                <div class="col-md-6 col-lg-4 item zoom-on-hover"><a href="/gallery"><img class="img-fluid image" src="static/img/Gallery/thumbnails/Northumberland/DSC05714_thumb.jpg" alt="Two lambs in a Field"></a></div>
+                <div class="col-md-6 col-lg-4 item zoom-on-hover"><a href="/gallery"><img class="img-fluid image" src="static/img/Gallery/thumbnails/Wales/DSC05505_thumb.jpg" alt="Waves on the Sea"></a></div>
             </div>
         </div>
     </section>

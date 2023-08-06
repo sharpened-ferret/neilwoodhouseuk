@@ -18,3 +18,8 @@
     </section>
 </main>
 {% endblock pagecontent %}
+
+{% block pagescripts %}
+    {{ super() }}
+    <script src="static/js/smart-forms.min.js"></script>
+{% endblock pagescripts %}
