@@ -1,7 +1,7 @@
 # neilwoodhouse.uk
 This repo contains the source code for my personal website. 
 
-The purpose of this site is to host links to, and files for, projects that I'm involved in and document past work. 
+The purpose of this site is to host links to, and files for, projects that I'm involved in and to document past work. 
 
 This site is built with Rust, using the [Rocket](https://rocket.rs/) web framework, the [Tera](https://tera.netlify.app/) templating engine,  and containerised using docker and nginx for easy deployment. 
 
