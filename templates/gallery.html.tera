@@ -17,6 +17,7 @@
             </div>
             <div class="filtr-controls"><span class="active" data-filter="all">all </span><span data-filter="1">Northumberland</span><span data-filter="2">Wales</span><span data-filter="3">Other</span></div>
             <div class="row filtr-container"> 
+                <div class="col-6 col-sm-4 col-md-3 filtr-item" data-category="3"></div>
                 {% for path in paths_wales %}
                 <div class="col-6 col-sm-4 col-md-3 filtr-item" data-category="2"><a href="static/img/Gallery/Wales/{{path}}.jpg"><img class="img-fluid" src="static/img/Gallery/thumbnails/Wales/{{path}}_thumb.jpg" alt="image"></a></div>
                 {% endfor %}
