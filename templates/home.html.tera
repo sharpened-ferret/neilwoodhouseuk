@@ -11,7 +11,7 @@
         <img class="img-fluid d-block mx-auto mb-5 profile-img" height="50%" src="static/img/profile_image_thumb.jpg" alt="Profile Picture of Neil Woodhouse">
         <div class="container">
             <div class="about-me">
-                <p>Hello, I am <strong>Neil Woodhouse</strong>. I am a 4th year Computer Science MSci student, freelance developer, and amateur photographer.</p><a class="btn btn-outline-primary" role="button" href="contact-me">Contact Me</a></div>
+                <p>Hello, I am <strong>Neil Woodhouse</strong>. I am a recent Computer Science MSci graduate, freelance developer, and amateur photographer.</p><a class="btn btn-outline-primary" role="button" href="contact-me">Contact Me</a></div>
         </div>
     </section>
     <section class="portfolio-block photography">
