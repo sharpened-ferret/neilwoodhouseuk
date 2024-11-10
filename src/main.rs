@@ -19,6 +19,32 @@ fn index() -> Template {
     Template::render("home", context! {})
 }
 
+#[get("/robots.txt")]
+async fn robots() -> Template {
+    const DEFAULT_AI_LIST: String = String::new();
+
+    // Requests a list of AI scrapers from the "ai.robots.txt" project
+    // This list is added to the default robots template, to keep scraper-blocking up-to-date
+    let ai_list_fetch = reqwest::get("https://raw.githubusercontent.com/ai-robots-txt/ai.robots.txt/refs/heads/main/robots.txt")
+        .await;
+    let ai_bots = match ai_list_fetch {
+        Ok(response) => {
+            let mut response_text = response.text().await.unwrap_or(DEFAULT_AI_LIST);
+            if response_text == "404: Not Found" {
+                error!("Failed to fetch AI Robots list: 404, resource may have moved or been removed");
+                response_text = DEFAULT_AI_LIST;
+            }
+            response_text
+        },
+        Err(e) => {
+            error!("Failed to fetch AI Robots list: {}", e);
+            DEFAULT_AI_LIST
+        }
+    };
+
+    Template::render("robots", context! {ai_bots})
+}
+
 #[get("/projects")]
 fn projects() -> Template {
     Template::render("projects", context! {})
@@ -84,7 +110,7 @@ fn projects_personal_website() -> Template {
 fn rocket() -> _ {
     rocket::build()
         .mount("/", routes![
-            index, projects, gallery, cv, contact, 
+            index, robots, projects, gallery, cv, contact, 
             projects_pathfinding, projects_allendale_holidays, projects_bae_systems_ctf, projects_battlefield_labyrinth, projects_festival_of_code, 
             projects_google_hashcode, projects_lora_chat, projects_recipe_viewer, projects_personal_website
         ])

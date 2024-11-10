@@ -1,0 +1,9 @@
+# hi robots o/
+# beep boop and all that
+
+# AI Scrapers aren't welcome
+{{ ai_bots }}
+
+# Other bots generally are
+User-agent: *
+Allow: /
