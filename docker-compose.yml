@@ -8,5 +8,5 @@ services:
     ports:
       - "8001:80"
     volumes:
-      - ./static/:/APP/static
-      - ./templates/:/APP/templates
+      - ./static/:/APP/static:ro
+      - ./templates/:/APP/templates:ro
