@@ -7,10 +7,27 @@ This site is built with Rust, using the [Rocket](https://rocket.rs/) web framewo
 
 
 ## Installation
-Note: this process assumes you have basic experience with docker and Rust and have both installed on your system. 
+Note: this process assumes you have basic experience with docker and docker compose.
 
-1. Pull the git repo
-1. Run `cargo build -r` to compile the project source to a release version. 
-1. Run `docker compose build` to build a container from the compiled app.
-1. Edit the host port in `docker-compose.yml` to your desired host port. 
+1. Pull the git repo.
+1. Edit the host port in `docker-compose.yml` to your desired host port. (The default is port 8001)
+1. Run `docker compose build` to build the container image.
 1. Run `docker compose up` to run the server. 
+
+
+## Update
+### From Git:
+1. Pull the changes from the repo
+1. Run `docker compose down` to stop the server.
+1. Run `docker compose build` to build the updated image.
+1. Run `docker compose up` to restart the server.
+
+### Locally
+This assumes you have the Rust toolchain installed on your system, and allows you to update the dependencies independently from the repo's current state. 
+
+```sh
+cargo update
+docker compose down
+docker compose build
+docker compose up
+```
